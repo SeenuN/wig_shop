@@ -1,43 +1,58 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>WDB - Wig Design Banashankari</title>
   <link rel="icon" href="./assets/images/logo.jpeg">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-</head><body>
+</head>
+<body>
 
-<header><div class="container header-inner">
-  <img class="logo" src="assets/images/logo.jpeg" alt="Logo">
-  <h1 style="font-weight: bold;">Wig Design Banashankari</h1>
-  <nav class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="wigs.html">Wigs</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="#gallery">Gallery</a>
-  </nav>
-</div></header>
+<header>
+  <div class="container header-inner">
+    <img class="logo" src="assets/images/logo.jpeg" alt="Logo">
+    <h1 style="font-weight: bold;">Wig Design Banashankari</h1>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="wigs.html">Wigs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+  </div>
+</header>
 
-<section class="hero"><div class="hero-content">
-  <h1 style="color: white;">Discover Your Perfect Wig</h1>
-  <p>Handcrafted, natural-looking wigs for confidence and style.</p>
-  <button class="btn-primary" onclick="location.href='wigs.html'">Explore Collection</button>
-</div></section>
+<section class="hero">
+  <div class="hero-content">
+    <h1 style="color: white;">Discover Your Perfect Wig</h1>
+    <p>Handcrafted, natural-looking wigs for confidence and style.</p>
+    <button class="btn-primary" onclick="location.href='wigs.html'">Explore Collection</button>
+  </div>
+</section>
 <section class="title">
   <h2>Wig Design Banashankari</h2>
 </section>
-<section class="intro-text"><p>
-  Welcome to Wig Design Banashankari, your premier destination for high-quality wigs. We specialize in crafting custom-made wigs for men and women, including medical wigs for cancer patients, at affordable prices. Our expert wig makers use premium materials and techniques to create comfortable, stylish, and natural-looking wigs that cater to your unique needs and preferences. Whether you're looking for a fashion statement or a solution for hair loss, we're committed to providing exceptional products and service. Visit us today to explore our collection and discover the perfect wig for you!
-</p></section>
+<section class="intro-text">
+  <p>
+    Welcome to Wig Design Banashankari, your premier destination for high-quality wigs. We specialize in crafting custom-made wigs for men and women, including medical wigs for cancer patients, at affordable prices. Our expert wig makers use premium materials and techniques to create comfortable, stylish, and natural-looking wigs that cater to your unique needs and preferences. Whether you're looking for a fashion statement or a solution for hair loss, we're committed to providing exceptional products and service. Visit us today to explore our collection and discover the perfect wig for you!
+  </p>
+</section>
 
-<section class="featured"><div class="container">
-  <h2>Featured Wigs</h2>
-  <div class="wig-grid">
-    <div class="wig-card"><img src="assets/images/women_boycut.jpeg"><h3>Boy Cut Wig</h3><span class="card-btn">View More</span></div>
-    <div class="wig-card"><img src="assets/images/Men’s Silk Base.jpeg"><h3>Men’s Silk Base</h3><span class="card-btn">View More</span></div>
-    <div class="wig-card"><img src="assets/images/Long Curly.jpeg"><h3>Long Curly</h3><span class="card-btn">View More</span></div>
+<section class="featured">
+  <div class="container">
+    <h2>Featured Wigs</h2>
+    <div class="wig-grid">
+      <div class="wig-card"><img src="assets/images/women_boycut.jpeg"><h3>Boy Cut Wig</h3><span class="card-btn">View More</span></div>
+      <div class="wig-card"><img src="assets/images/Men’s Silk Base.jpeg"><h3>Men’s Silk Base</h3><span class="card-btn">View More</span></div>
+      <div class="wig-card"><img src="assets/images/Long Curly.jpeg"><h3>Long Curly</h3><span class="card-btn">View More</span></div>
+    </div>
   </div>
-</div></section>
+</section>
 
 <div class="slideshow-container container">
   <div class="slides"><img src="assets/images/slide1.jpeg"></div>
@@ -48,6 +63,9 @@
   <div class="slides"><img src="assets/images/slide6.jpeg"></div>
   <div class="slides"><img src="assets/images/slide7.jpeg"></div>
   <div class="slides"><img src="assets/images/slide8.jpeg"></div>
+  <div class="slides"><img src="assets/images/slide9.jpg"></div>
+  <div class="slides"><img src="assets/images/slide10.jpg"></div>
+  <div class="slides"><img src="assets/images/slide11.jpg"></div>
   <button class="prev" onclick="slideIndex=(slideIndex-2);showSlides();">❮</button>
   <button class="next" onclick="showSlides();">❯</button>
   <div class="dot-container">
@@ -58,51 +76,50 @@
 <div class="gallery" id="gallery">
   <h2 style="font-weight: bold;">Gallery</h2>
   <div class="img">
-  <img src="./assets/images/gallery1.jpeg" alt="img1">
-  <img src="./assets/images/gallery2.jpeg" alt="img2">
-  <img src="./assets/images/gallery3.jpeg" alt="img3">
+    <img src="./assets/images/gallery1.jpeg" alt="img1">
+    <img src="./assets/images/gallery2.jpeg" alt="img2">
+    <img src="./assets/images/gallery3.jpeg" alt="img3">
   </div>
 </div>
 
-  <!-- Contact Section -->
-  <div class="contact" id="contact">
-    <h1>CONTACT US</h1>
-    <ul>
-      <li><strong>Phone:</strong> <a href="tel:+91 9845482751">+91 9845482751</a></li>
-      <li><strong>Email:</strong> <a type="Email">Venkateshmanu221@gmail.com</a></li>
-      <li>
-        <strong>Address:</strong>
-        <a
-          href="https://maps.app.goo.gl/gw1dPpjXeJNLbwSc6"
-          target="_blank">
-          Nanjappa complex, Kanakapura Main Rd, Adarsh Gardens Appartments, 1st Phase, Banashankari, Bengaluru, Karnataka 560078
-        </a>
-      </li>
-    </ul>
-  </div>
+<div class="contact" id="contact">
+  <h1>CONTACT US</h1>
+  <ul>
+    <li><strong>Phone:</strong> <a href="tel:+91 9845482751">+91 9845482751</a></li>
+    <li><strong>Email:</strong> <a type="Email">Venkateshmanu221@gmail.com</a></li>
+    <li>
+      <strong>Address:</strong>
+      <a href="https://maps.app.goo.gl/gw1dPpjXeJNLbwSc6" target="_blank">
+        Nanjappa complex, Kanakapura Main Rd, Adarsh Gardens Appartments, 1st Phase, Banashankari, Bengaluru, Karnataka 560078
+      </a>
+    </li>
+  </ul>
+</div>
 
-  <!-- Social Media Icons -->
-  <div class="social_icons">
-    <h4>Follow us on:</h4>
-    <ul>
-      <li>
-        <a href="https://www.facebook.com/profile.php?id=100006378254123" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a href=" https://www.instagram.com/wig_design_banashankari" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://wa.me/9845482751" target="_blank">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
+<div class="social_icons">
+  <h4>Follow us on:</h4>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=100006378254123" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/wig_design_banashankari" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/9845482751" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </li>
+  </ul>
+</div>
 
-<footer><p>&copy; 2025 Wig Design Banashankari. All rights reserved.</p></footer>
+<footer>
+  <p>© 2025 Wig Design Banashankari. All rights reserved.</p>
+</footer>
 <script src="assets/js/script.js"></script>
-</body></html>
+</body>
+</html>

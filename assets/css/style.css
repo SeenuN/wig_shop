@@ -91,7 +91,7 @@ header .header-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(108, 71, 147, 0.5); /* Lavender overlay */
+  /* background: rgba(108, 71, 147, 0.5); Lavender overlay */
 }
 
 .hero-content {
@@ -578,5 +578,81 @@ footer p {
   .gallery img {
     max-width: 400px;
     padding: 10px;
+  }
+}
+
+
+
+
+/* Hamburger Menu Styles */
+.menu-toggle {
+  display: none; /* Hidden by default for larger screens */
+  background: none;
+  border: none;
+  color: #4B0082; /* Indigo */
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-links {
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* Mobile View */
+@media (max-width: 767px) {
+  .logo, .header-inner h1 {
+    display: none; /* Hide logo and title in mobile view */
+  }
+
+  .menu-toggle {
+    display: block; /* Show hamburger icon */
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #E6E6FA; /* Lavender background */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: 300px; /* Adjust based on content */
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 10px 20px;
+    text-align: left;
+    width: 100%;
+    border-bottom: 1px solid #D8BFD8; /* Thistle border */
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .header-inner {
+    justify-content: flex-end; /* Align hamburger icon to the right */
+  }
+}
+
+/* Ensure larger screens retain original layout */
+@media (min-width: 768px) {
+  .nav-links {
+    max-height: none; /* Reset for desktop */
+    position: static;
+    background: none;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    max-height: none;
   }
 }
