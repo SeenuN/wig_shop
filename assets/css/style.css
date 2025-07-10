@@ -111,7 +111,7 @@ header .header-inner {
 }
 
 .btn-primary {
-  background: #C8A2C8; /* Lilac button */
+  background: #ff4081; /* Lilac button */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -121,7 +121,7 @@ header .header-inner {
 }
 
 .btn-primary:hover {
-  background: #B090B0; /* Darker lilac on hover */
+  background: #e73370; /* Darker lilac on hover */
 }
 
 /* Title */
