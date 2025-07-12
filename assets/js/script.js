@@ -35,3 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
     console.error('Menu toggle button not found');
   }
 });
+
+//collections 
+  document.addEventListener('DOMContentLoaded', () => {
+    const videos = document.querySelectorAll('.click-to-play');
+    videos.forEach(video => {
+      video.addEventListener('click', () => {
+        if (video.paused) {
+          video.play().catch(error => {
+            console.log('Autoplay prevented:', error);
+          });
+        } else {
+          video.pause();
+        }
+      });
+    });
+  });
